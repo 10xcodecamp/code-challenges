@@ -63,7 +63,7 @@ function StringReduction(str) {
 }
 
 // keep this function call here
-console.log(StringReduction("cccc"));
+console.log(StringReduction("bcab"));
 
 // cab
 // bb
