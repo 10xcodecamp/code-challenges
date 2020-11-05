@@ -1,3 +1,5 @@
+# Dice Game
+
 ### PROVIDED:
 
 1. A function that returns a random number between 1 and 6
