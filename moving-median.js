@@ -17,17 +17,15 @@ function MovingMedian(arr) {
 }
 
 function getMedian(nums) {
-   const middleIndex = (nums.length + 1) / 2;
+   const halfIndex = Math.floor(nums.length / 2);
    const sortedNums = [...nums].sort((a, b) => a - b);
    const isEven = sortedNums.length % 2 === 0;
    if (isEven) {
-      return (
-         (sortedNums[middleIndex - 1.5] + sortedNums[middleIndex - 0.5]) / 2
-      );
+      return (sortedNums[halfIndex - 1] + sortedNums[halfIndex]) / 2.0;
    } else {
-      return sortedNums[middleIndex - 1];
+      return sortedNums[halfIndex];
    }
 }
 
 // keep this function call here
-console.log(MovingMedian([3, 1, 3, 5, 10, 6, 4, 3, 1]));
+console.log(MovingMedian([3, 0, 0, -2, 0, 2, 0, -2]));
